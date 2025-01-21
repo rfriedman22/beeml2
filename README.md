@@ -44,6 +44,12 @@ from beeml2.occupancy import count_motifs
 count_motifs(motif_hits)
 ```
 
+You can also save the result of `find_motifs` to a flat text file:
+```python
+from beeml2.io import save_motif_hits
+save_motif_hits(motif_hits, "motif_hits.tsv")
+```
+
 If you want to calculate the total occupancy of each TF on each sequence, you can run:
 ```python
 from beeml2.occupancy import calculate_occupancy
