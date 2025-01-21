@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beeml2"
+version = "0.0.1"
+authors = [
+  { name="Ryan Z. Friedman", email="ryanfriedman22@gmail.com" },
+]
+description = "BEEML2 is a python package to scan DNA sequences for transcription factor binding sites based on biophysical parameters."
+readme = "README.md"
+requires-python = ">=3.8,<=3.11.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/rfriedman22/beeml2"
