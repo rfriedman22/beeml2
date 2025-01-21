@@ -6,7 +6,7 @@ Create a conda environment, clone this repository, and then pip install it. For 
 ```sh
 conda create --name beeml2 python=3.11 -y
 conda activate beeml2
-# TKTKTK clone the repo
+git clone https://github.com/rfriedman22/beeml2.git
 cd beeml2
 pip install .
 ```
